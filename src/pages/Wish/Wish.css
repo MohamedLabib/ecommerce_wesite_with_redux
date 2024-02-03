@@ -1,0 +1,124 @@
+.wish {
+    padding: 4rem 9%;
+}
+
+.wish .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 2rem 0;
+}
+
+.wish .header>div {
+    cursor: pointer;
+}
+
+.wish .header .shoping {
+    background-color: #000000;
+    color: #FFF;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: .8rem;
+    border-radius: .5rem;
+}
+
+.wish .wish-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: .5rem;
+}
+
+.wish .wish-products .wish-product {
+    background-color: #FFF;
+    position: relative;
+    padding: .5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.wish .wish-products .wish-product .image {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+}
+
+.wish .wish-products .wish-product .image img {
+    width: 100%;
+    height: 100%;
+    scale: .8;
+}
+
+.wish .wish-btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+
+}
+
+.wish .wish-btns>div {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.wish .wish-btns .icon::after {
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    border: .2px solid #000;
+    top: -1.2rem;
+    left: -1.2rem;
+    font-size: .7rem;
+    text-wrap: nowrap;
+    padding: .1rem .2rem;
+    border-radius: 3px;
+    display: none;
+    transition: .3s ease;
+}
+
+.wish .wish-btns div:hover .icon::after {
+    display: block;
+}
+
+.wish .wish-btns .add .icon::after {
+    content: "add to cart";
+}
+
+.wish .wish-btns .delete .icon::after {
+    content: "delete item";
+}
+
+.wish .wish-btns .find .icon::after {
+    content: "find similar items";
+}
+
+.wish .wish-products .wish-product .summary .title {
+    width: 100%;
+    text-align: center;
+}
+
+.wish .wish-products .wish-product .summary .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.wish .wish-products .wish-product .summary .info span {
+    font-weight: 500;
+}
+
+.wish .wish-products .wish-product .summary .info div {
+    background-color: #fb8500;
+    color: #FFF;
+    padding: .2rem .5rem;
+    border-radius: 6px;
+
+}
+
+@media (max-width:870px) {
+    .wish {
+        padding: 0rem 2%;
+    }
+}

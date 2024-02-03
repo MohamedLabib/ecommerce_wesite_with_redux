@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cairo:wght@200;400;500;600;700&family=Mada:wght@900&family=Mirza:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cairo:wght@200;400;500;600;700&family=Mada:wght@900&family=Mirza:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cairo:wght@200;400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Mada:wght@900&family=Mirza:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+::selection {
+    background-color: #2b2d42;
+    color: #FFF;
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin: auto;
+    max-width: 2000px;
+}
+
+.container {
+    margin: 2rem 4rem;
+}
+
+a {
+    color: #000;
+}
+
+
+.main-btn {
+    background-color: #000;
+    color: #FFF;
+    padding: .6rem;
+    border-radius: .5rem;
+    width: fit-content;
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 8rem;
+    text-transform: uppercase;
+    transition: .5s ease;
+    display: inline-block;
+}
+
+.main-btn:hover {
+    background-color: #edf2f4;
+    color: #000;
+}
+
+
+.swiper-btns {
+    position: absolute;
+    top: 0rem;
+    right: 4rem;
+    z-index: 100;
+}
+
+.swiper-btns button {
+    border: none;
+    outline: none;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    cursor: pointer;
+    height: 30px;
+    display: inline-block;
+    line-height: 35px;
+    width: 30px;
+    font-size: 1.5rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.swiper-btns .left {
+    left: 0;
+}
+
+.swiper-btns .right {
+    right: 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    width: fit-content;
+    cursor: pointer;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+
+
+.star {
+    margin: .3rem .5rem .3rem 0;
+    font-size: 1.1rem;
+}
+
+.countdown {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.countdown .times {
+    margin: 0 .2rem;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    width: 50px;
+    height: 50px;
+    line-height: 25px;
+    color: #000;
+}
+
+.countdown .date {
+    text-transform: uppercase;
+    background-color: #222;
+    color: #FFF;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+
+.countdown .times .num {
+    font-size: 1rem;
+    background-color: #FFF;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+@media (max-width:768px) {
+    .container {
+        margin: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
+
+@media (max-width:460px) {
+
+    .swiper-btns {
+        top: 40%;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .swiper-btns button {
+        margin: 0;
+
+    }
+}
